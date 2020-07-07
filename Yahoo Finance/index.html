@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?";
+
+    let searchParams = {
+        "region": "US",
+	    "lang": "en"
+    };
+
+    let search = new URLSearchParams(searchParams).toString();
+    
+    console.log(search)
+    console.log(url+search);
+
+    fetch(url+search, {
+      headers: {
+        "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+        "x-rapidapi-key": "e7fa5ed94amsh2453fc840a48233p13708djsn9873f27f189e",
+        useQueryString: true,
+      },
+    })
+      .then((res) => res.json)
+      .then((resp) => console.log(resp))
+      .catch((error) => console.log(error));
+
+  </script>
+</html>
