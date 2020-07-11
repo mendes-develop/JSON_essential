@@ -6,10 +6,12 @@
     <title>Weather API</title>
   </head>
   <body>
+    <script src="api_key.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       const yql_api = "http://query.yahooapis.com/v1/public/yql?";
-      const api_key = "0b07585b132d23a8c2131a461d457f6e";
+      const api_key = API_KEY;
+      console.log(api_key)
 
       let city = "New York City";
       let params = {
