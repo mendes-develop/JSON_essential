@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let params = {
+        source: "en",
+        q: "I would like to learn french",
+        target: "fr",
+      };
+
+      let uri = new URLSearchParams(params);
+      let url = encodeURI(uri);
+
+      console.log(uri.toString(), url);
+
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+
+      xhr.onload = function () {
+        console.log(this.response);
+      };
+
+      xhr.open(
+        "POST",
+        "https://google-translate1.p.rapidapi.com/language/translate/v2"
+      );
+      xhr.setRequestHeader(
+        "x-rapidapi-host",
+        "google-translate1.p.rapidapi.com"
+      );
+      xhr.setRequestHeader(
+        "x-rapidapi-key",
+        "e7fa5ed94amsh2453fc840a48233p13708djsn9873f27f189e"
+      );
+      xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+      xhr.responseType = "json";
+
+      xhr.send(url.toString());
+    </script>
+  </body>
+</html>

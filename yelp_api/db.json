@@ -1,0 +1,112 @@
+{
+  "favorites": [
+    {
+      "name": "Lucia Pizza",
+      "price": "$",
+      "imgURL": "https://s3-media2.fl.yelpcdn.com/bphoto/q_fFZOTm7P0iD4EHCrEX5Q/o.jpg",
+      "street": "136-55 Roosevelt Ave",
+      "city": "Flushing",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "name": "Lee's Tavern",
+      "price": "$$",
+      "imgURL": "https://s3-media3.fl.yelpcdn.com/bphoto/MwJNH2iy6S-R__rhRr2whg/o.jpg",
+      "street": "60 Hancock St",
+      "city": "Staten Island",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "pubs",
+          "title": "Pubs"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "name": "Burger Club",
+      "price": "$$",
+      "imgURL": "https://s3-media3.fl.yelpcdn.com/bphoto/7fjr1ssEOYWPKPZQhj7D8A/o.jpg",
+      "street": "32-02 30th Ave",
+      "city": "Astoria",
+      "categories": [
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "name": "Friedman's",
+      "price": "$$",
+      "imgURL": "https://s3-media1.fl.yelpcdn.com/bphoto/c9vZKJbtXkBQxZ8yUOMO8A/o.jpg",
+      "street": "132 W 31st St",
+      "city": "New York",
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "gluten_free",
+          "title": "Gluten-Free"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "name": "Two 8 Two Bar & Burger",
+      "price": "$$",
+      "imgURL": "https://s3-media1.fl.yelpcdn.com/bphoto/Bk_qD2OE7vVfDvsN4jZExQ/o.jpg",
+      "street": "282 Atlantic Ave",
+      "city": "Brooklyn",
+      "categories": [
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "name": "Louie & Ernie's Pizza",
+      "price": "$",
+      "imgURL": "https://s3-media1.fl.yelpcdn.com/bphoto/8JXsdYB8CP5bAa2Z8QSdyw/o.jpg",
+      "street": "1300 Crosby Ave",
+      "city": "Bronx",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "id": 19
+    }
+  ]
+}
