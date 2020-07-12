@@ -2,8 +2,7 @@ console.log("Hello app");
 
 // API Keys and URL's
 const clientID = "Om5-acai0P3D4mQ69JofQw";
-const apiKey =
-  "9rUochue7aPfDlW_vNORjwX51GSn7-gbT1e9QTM5o2DvfWPbnEP84OuC_MAtyLQphdyozV0UeFg5TX2ovHIeE8tgPSxtCoxRxrDtq8ywgWql9kIQmHZq-J7LJ76gXXYx";
+const apiKey = API_KEY;
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const yelpURL = "https://api.yelp.com/v3/businesses/search";
 const favoritesURL = "http://localhost:3000/favorites/";

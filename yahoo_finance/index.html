@@ -6,12 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    
+
   </body>
+  <script type="text/javascript" src="api_Key.js"></script>
   <script>
     const url =
       "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-profile";
-      const api_key = "e7fa5ed94amsh2453fc840a48233p13708djsn9873f27f189e"
+      const api_key = API_KEY
 
     function getTrandingTickers() {
       fetch("https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-trending-tickers?region=US", {
