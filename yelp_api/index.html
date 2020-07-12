@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Seach Yelp API</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1>Seach Yelp API</h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="favorites-btn" >Favorites</button>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <p>Favorite your best restaurants in NYC!</p>
+
+      <form id="search-form">
+        <label for="">Query by Borough</label>
+        <select name="location" id="">
+            <option value="" disabled selected>Select a location</option>
+            <option value="manhattan">Manhattan</option>
+            <option value="queens">Queens</option>
+            <option value="brooklyn">Brooklyn</option>
+            <option value="bronx">Bronx</option>
+            <option value="statenisland">Staten Island</option>
+        </select>
+        <label for="">Restaurant Category</label>
+        <select name="category" id="">
+            <option value="" disabled selected>Category</option>
+            <option value="brunch">Brunch</option>
+            <option value="burger">Burger</option>
+            <option value="mexican">Mexican</option>
+            <option value="pizza">Pizza</option>
+            <option value="sushi">Sushi</option>
+        </select>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+
+      <div class="restaurants-collection">
+
+      </div>
+
+    </div>
+    <script src="api_key.js" type="text/javascript"></script>
+    <script defer type="text/javascript" src="index.js" ></script>
+  </body>
+</html>
