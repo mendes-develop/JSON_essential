@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-<<<<<<< HEAD:microsoft_translator/package.json
-  "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
-=======
   "scripts:":{
     "start" : "nodemon translate-text.js",
     "dev": "nodemon translate-text.js"
->>>>>>> afdaff523baf56240d0c37d8547392089580ee3f:translator_api/package.json
   },
   "dependencies": {
     "cors": "^2.8.5",
