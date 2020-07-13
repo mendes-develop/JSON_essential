@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <img id="image" src="" alt="Albert Einstein" width="200" height="200">
+    <p id="paragraph"></p>
+    <button onclick="getAlbert()">Get Albert</button>
+
+    
+    <script>
+      // let cors_proxy = "https://cors-anywhere.herokuapp.com/";
+      let archive_url =
+        "https://archive.org/details/mma_albert_einstein_pasadena_270713?output=json&callback=?";
+
+      function getAlbert(){
+        $.getJSON(archive_url, function(data){
+          $("#image").attr("src", data.misc.image)
+          $("#paragraph").text(data.misc["collection-title"])
+          console.log(data.misc.image)
+        })
+      }
+
+      $.ajax({
+        dataType: "json",
+        url: archive_url,
+        success: function(data){console.log(data)},
+      });
+
+      fetch("https://cors-anywhere.herokuapp.com/https://archive.org/details/mma_albert_einstein_pasadena_270713?output=json")
+      .then(resp => resp.json())
+      .then(resp => console.log(resp))
+      
+    </script>
+  </body>
+</html>

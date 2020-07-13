@@ -1,0 +1,32 @@
+{
+  "object_type": {},
+  "array_type": [],
+  "array_type_string": ["a", "b", "c"],
+  "string": "Hello World",
+  "true_or_false": true,
+  "type_null": null,
+  "escaped_chars": {
+    "double_quotes": "\"",
+    "escaped_backslash": "\\",
+    "escaped_forwardslash": "/",
+    "escaped_backspace": "\b",
+    "escaped_formfeed": "\f",
+    "escaped_newlinw": "\n",
+    "escaped_return": "\r",
+    "escaped_tab": "\t"
+  },
+  "unicode_chars": {
+    "unicode_copyright": "\u00a9",
+    "unicodepi": "\u30c0",
+    "unicode_greel_alpha": "\u03b1"
+  },
+  "numbers": {
+    "integer": 12345,
+    "negative_integer": -12345,
+    "decimal": 3.1415926,
+    "exponential": 2e24,
+    "Exponential": 2e24,
+    "negative_exponent": 3e-5,
+    "comment": "The main reason to transfer numeric values in JSON as strings is to eliminate any loss of precision or ambiguity in transfer."
+  }
+}

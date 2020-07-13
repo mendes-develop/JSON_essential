@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON and JavaScript</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+
+    <script defer>
+
+        function parseJSON(data){
+            console.log(data)
+            
+            let data_parsed = JSON.parse(data)
+            console.log(data_parsed)
+            console.log(typeof data_parsed)
+            
+            let user = data_parsed.users[0]
+            console.log(user)
+            console.log("Name: ", user.name)
+            console.log("Username: ", user.username)
+            console.log("Name:", user.email)
+            
+            let data_stringfy = JSON.stringify(data_parsed)
+            console.log(data_stringfy)
+            
+            console.log("data", typeof data)
+            console.log("user", typeof user)
+            console.log("data stringfy", typeof data_stringfy)
+
+            console.log("BREAK","\n")
+        }
+
+        function getLocalData() {
+            let xhr = new XMLHttpRequest()
+            xhr.open("GET", "data.json.txt")
+            xhr.onload = function () { parseJSON(this.responseText) }
+            xhr.send()
+        }
+
+        getLocalData()
+
+        $.get("data.json.txt", function(data, resp){
+            parseJSON(data)
+            console.log(resp)
+        })
+
+        fetch("data.json.txt")
+        .then(resp => resp.text())
+        .then(resp => parseJSON(resp))
+
+
+    </script>
+</body>
+
+</html>

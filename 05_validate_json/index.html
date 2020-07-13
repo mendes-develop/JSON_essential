@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer>
+
+        // JQUERY get request method
+        function getData() {
+            $.get('broken.json.txt', function (data, resp) {
+                console.log(resp)
+                try {
+                    let dataParsed = JSON.parse(data)
+                    console.log(dataParsed)
+                } catch (error) {
+                    handleError(error)
+                }
+            })
+        }
+
+        getData()
+        fetchData()
+
+        function fetchData() {
+            fetch('broken.json.txt')
+                .then(resp => resp.text())
+                .then(resp => console.log(JSON.parse(resp)))
+                .catch(error => handleError(error))
+        }
+
+        function handleError(error) {
+            console.log(error)
+            console.log("JSON syntax Error: ", error instanceof SyntaxError)
+            console.log("Error message: ", error.message)
+        }
+
+            // https://jsonlint.com/
+    </script>
+</body>
+
+</html>

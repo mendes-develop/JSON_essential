@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eval</title>
+  </head>
+  <body></body>
+  <script>
+    (function () {
+      console.log(eval('2 + 2'))
+      let x = 2, y = 4;
+      console.log(eval('x + y'));
+
+      let array = [2,3]
+      let number = 9
+
+      let evaluated_code = eval('array.push(number)')
+      console.log(evaluated_code)
+
+
+      let jsonText = 
+      '{"prop1":"some text", \
+      "prop2":2, \
+      "prop3":null, \
+      "prop4": (function(){ console.log("Run some malicious code."); return 8 })() }'
+      console.log(jsonText);
+      
+      // Will evaliate any javascript code, not only json type
+      let evalParsed = eval('(' + jsonText + ')')
+      console.log(evalParsed)
+      
+      
+      try {
+        let jsonParsed = JSON.parse(jsonText)
+        console.log(jsonParsed)
+      } catch { console.log("error parsing")}
+      
+
+    })();
+  </script>
+</html>

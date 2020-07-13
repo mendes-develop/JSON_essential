@@ -18,8 +18,6 @@ if (!process.env[endpoint_var]) {
 var endpoint = process.env[endpoint_var];
 
 
-
-
 console.log(23,endpoint)
 console.log(248,subscriptionKey)
 console.log(uuid().toString())
