@@ -1,0 +1,16 @@
+{
+  "empty_object": {),
+  "empty_array":[),
+  "array_of_strings" : [
+    "a", 'b', "c"
+  ],
+  "true_or_false": tru,
+  "null_type" : "null"
+  "escaped_backlash": "\\\"
+  "escaped_tab": "\y",
+  "unicode_copyright":"\u00q9",
+  'integer': 0x12345
+}
+ 
+ 
+ 

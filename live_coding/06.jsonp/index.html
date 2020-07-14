@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // variables section
+        const flickr_API =
+            "https://www.flickr.com/services/feeds/photos_public.gne?callback=?tags=newyork&format=json";
+
+        let req = {
+            tags: "new york",
+            format: "json",
+        };
+        let search = new URLSearchParams(req).toString();
+
+
+        // jQuery section
+        $.getJSON(`https://www.flickr.com/services/feeds/photos_public.gne?jsoncallback=?`, req , function(data){
+            console.log(data)
+        })
+
+
+        // Fetch section
+        fetch("https://cors-anywhere.herokuapp.com/" + flickr_API + search)
+        .then(response => response.json())
+        .then(resp => console.log(resp))
+
+
+
+        // ADDING SCRIPT TAG
+
+        // function jsonFlickrFeed(data){
+        //     console.log(data)
+        // }
+
+        // let script = document.createElement("script");
+        // script.type = "text/javascript";
+        // script.src = `https://www.flickr.com/services/feeds/photos_public.gne?${search}`;
+        // document.head.appendChild(script);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

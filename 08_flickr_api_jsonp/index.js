@@ -1,6 +1,6 @@
 
 const flickr_API =
-  "https://www.flickr.com/services/feeds/photos_public.gne?callback=?";
+  "ps://www.flickr.com/services/feeds/photos_public.gne?callback=?htt";
 
 let req = {
   tags: "new york",

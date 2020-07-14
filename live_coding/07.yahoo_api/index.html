@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Finance</title>
+</head>
+<h1></h1>
+
+<body>
+
+    <script>
+        let url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-profile?symbol=NFLX"
+
+
+
+        fetch(url, {
+            headers: {
+                "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+                "x-rapidapi-key": "e7fa5ed94amsh2453fc840a48233p13708djsn9873f27f189e"
+            }
+        })
+            .then(function (response) { 
+
+                return response.json() 
+            })
+            .then(function (response) {
+
+                let price = response.price.regularMarketPrice.raw
+                let stockName = response.quoteType.shortName
+
+
+
+                console.log(stockName, ": $", price)
+            })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

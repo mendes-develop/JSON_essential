@@ -420,14 +420,14 @@ fsevents@~2.1.2:
 
 generate-function@^2.0.0:
   version "2.3.1"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/generate-function/-/generate-function-2.3.1.tgz?dl=https://registry.npmjs.org/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
-  integrity sha1-8GlhdpDBDIaOc7hGV0Z2T5fDR58=
+  resolved "https://registry.npmjs.org/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
+  integrity sha512-eeB5GfMNeevm/GRYq20ShmsaGcmI81kIX2K9XQx5miC8KdHaC6Jm0qQ8ZNeGOi7wYB8OsdxKs+Y2oVuTFuVwKQ==
   dependencies:
     is-property "^1.0.2"
 
 generate-object-property@^1.1.0:
   version "1.2.0"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/generate-object-property/-/generate-object-property-1.2.0.tgz?dl=https://registry.npmjs.org/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
+  resolved "https://registry.npmjs.org/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
   integrity sha1-nA4cQDCM6AT0eDYYuTf6iPmdUNA=
   dependencies:
     is-property "^1.0.0"
@@ -612,13 +612,13 @@ is-installed-globally@^0.3.1:
 
 is-my-ip-valid@^1.0.0:
   version "1.0.0"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz?dl=https://registry.npmjs.org/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
-  integrity sha1-ezUbjo7dTTmV1NBmaA5mTZRpaCQ=
+  resolved "https://registry.npmjs.org/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
+  integrity sha512-gmh/eWXROncUzRnIa1Ubrt5b8ep/MGSnfAUI3aRp+sqTCs1tv1Isl8d8F6JmkN3dXKc3ehZMrtiPN9eL03NuaQ==
 
 is-my-json-valid@^2.20.4:
   version "2.20.4"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/is-my-json-valid/-/is-my-json-valid-2.20.4.tgz?dl=https://registry.npmjs.org/is-my-json-valid/-/is-my-json-valid-2.20.4.tgz#f027a2154727d14c0c73c946bf8ac5b5aee98796"
-  integrity sha1-8CeiFUcn0UwMc8lGv4rFta7ph5Y=
+  resolved "https://registry.npmjs.org/is-my-json-valid/-/is-my-json-valid-2.20.4.tgz#f027a2154727d14c0c73c946bf8ac5b5aee98796"
+  integrity sha512-Ym0D5NOxJ+f+zzQHkLfu5n9B1134ra+KwskpDD86200xYQBsAb9OKX81eSsI4oKN9GNAhDAReS7t8Mxtih/l+A==
   dependencies:
     generate-function "^2.0.0"
     generate-object-property "^1.1.0"
@@ -648,7 +648,7 @@ is-path-inside@^3.0.1:
 
 is-property@^1.0.0, is-property@^1.0.2:
   version "1.0.2"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/is-property/-/is-property-1.0.2.tgz?dl=https://registry.npmjs.org/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
+  resolved "https://registry.npmjs.org/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
   integrity sha1-V/4cTkhHTt1lsJkR8msc1Ald2oQ=
 
 is-typedarray@^1.0.0:
@@ -668,8 +668,8 @@ json-buffer@3.0.0:
 
 jsonpointer@^4.0.0:
   version "4.1.0"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jsonpointer/-/jsonpointer-4.1.0.tgz?dl=https://registry.npmjs.org/jsonpointer/-/jsonpointer-4.1.0.tgz#501fb89986a2389765ba09e6053299ceb4f2c2cc"
-  integrity sha1-UB+4mYaiOJdlugnmBTKZzrTywsw=
+  resolved "https://registry.npmjs.org/jsonpointer/-/jsonpointer-4.1.0.tgz#501fb89986a2389765ba09e6053299ceb4f2c2cc"
+  integrity sha512-CXcRvMyTlnR53xMcKnuMzfCA5i/nfblTnnr74CZb6C4vG39eu6w51t7nKmU5MfLfbTgGItliNyjO/ciNPDqClg==
 
 keyv@^3.0.0:
   version "3.1.0"
@@ -924,9 +924,9 @@ readdirp@~3.4.0:
     picomatch "^2.2.1"
 
 registry-auth-token@^4.0.0:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/registry-auth-token/-/registry-auth-token-4.1.1.tgz#40a33be1e82539460f94328b0f7f0f84c16d9479"
-  integrity sha512-9bKS7nTl9+/A1s7tnPeGrUpRcVY+LUh7bfFgzpndALdPfXQBfQV77rQVtqgUV3ti4vc/Ik81Ex8UJDWDQ12zQA==
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/registry-auth-token/-/registry-auth-token-4.2.0.tgz#1d37dffda72bbecd0f581e4715540213a65eb7da"
+  integrity sha512-P+lWzPrsgfN+UEpDS3U8AQKg/UjZX6mQSJueZj3EK+vNESoqBSpBUD3gmu4sF9lOsjXWjF11dQKUqemf3veq1w==
   dependencies:
     rc "^1.2.8"
 
@@ -1199,5 +1199,5 @@ xdg-basedir@^4.0.0:
 
 xtend@^4.0.0:
   version "4.0.2"
-  resolved "https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/xtend/-/xtend-4.0.2.tgz?dl=https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
-  integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
+  resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
